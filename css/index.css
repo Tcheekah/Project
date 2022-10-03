@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.left-section{
+    flex-basis: 65%;
+    background-image: linear-gradient(rgba(223, 97, 171, 0.822),rgba(240, 72, 170, 0.692)), url("/img/Focus.jpg");
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.right-section{
+    background-color: rgb(253, 246, 246);
+    flex-basis: 50%;
+}
+
+.signup-box{
+    width: 360px;
+    margin: 30px;
+}
+
+h1{
+  padding: 25px 0 20px 0;
+  font-size: 25px;
+}
+
+label[for=fname], [for=lname], [for=email], [for=password], [for=Cpassword]{
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;  
+}
+
+input[type=text], [type=email],[type=password],[type=Cpassword]{
+    width: 100%;
+    padding: 12px 0 12px 3px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgb(253, 246, 246);
+}
+
+.agreement, input[type=checkbox]{
+    margin: 15px 0 12px 0;
+    font-size: 12px;
+}
+
+button{
+    width: 210px;
+    height: 35px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background:  linear-gradient(rgba(223, 97, 171, 0.822),rgba(240, 72, 170, 0.692));
+    color: white;
+    font-size: 18px;
+}
+
+input:hover{
+    cursor:default;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(241, 163, 224);
+    font-size: 12px;
+    font-weight:100;
+}
+
+@media(max-width: 768px){
+    .container{
+     width: 100%;
+    }
+}
