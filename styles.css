@@ -15,7 +15,7 @@
 
 .left-section{
     flex-basis: 65%;
-    background-image: linear-gradient(rgba(223, 97, 171, 0.822),rgba(240, 72, 170, 0.692)), url("/img/Focus.jpg");
+    background-image: linear-gradient(rgba(223, 97, 171, 0.822),rgba(240, 72, 170, 0.692)), url("visual.jpg");
     background-size: cover;
     position: relative;
     width: 100%;
@@ -75,10 +75,4 @@ input:focus{
     border-bottom: 1px solid rgb(241, 163, 224);
     font-size: 12px;
     font-weight:100;
-}
-
-@media(max-width: 768px){
-    .container{
-     width: 100%;
-    }
 }
